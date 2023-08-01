@@ -1,0 +1,23 @@
+
+
+
+<div class="prodBtn d-flex justify-content-center  align-items-center">
+    <div class="info mt-5 ">
+        <button class="btn btn-primary mr-3"
+    (click)="addProduct()"
+    
+    >Add Product</button>
+    
+    <button class="btn btn-danger"
+    [disabled]="isdisabled"
+    (click)="removeProduct()"
+    
+    >Remove Product</button>
+    </div>
+
+    <div class="para">
+        <p class="bg-dark text-white text-center p-4 mt-4" [innerHTML]="productStatus">
+    
+        </p>
+    </div>
+</div>
